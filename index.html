@@ -233,6 +233,84 @@
   padding: 24px;
   border-radius: 12px;
 }
+    /* Warm page background */
+body {
+  background: #faf8f5;
+}
+
+/* Profile panel */
+.layout > header {
+  background: #f0ede7;
+  padding: 24px;
+  border: 1px solid #ded8cf;
+  border-radius: 16px;
+}
+
+/* Section headings with a warm accent */
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #253047;
+}
+
+h2::before {
+  content: "";
+  width: 5px;
+  height: 28px;
+  flex-shrink: 0;
+  background: #92704b;
+  border-radius: 4px;
+}
+
+/* Navigation */
+.navigation {
+  gap: 8px 12px;
+}
+
+.navigation a {
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.navigation a:hover {
+  background: #eee8df;
+}
+
+/* Research project cards */
+.project {
+  background: #ffffff;
+  border: 1px solid #ded8cf;
+  border-radius: 12px;
+  padding: 24px;
+  margin-top: 18px;
+  box-shadow: 0 3px 12px rgba(37, 48, 71, 0.04);
+}
+
+/* Education entries */
+.entry {
+  border-left: 2px solid #d5c7b5;
+  padding-left: 18px;
+}
+
+/* Comfortable spacing */
+section {
+  margin-bottom: 48px;
+}
+
+/* Subtle interaction */
+@media (prefers-reduced-motion: no-preference) {
+  .project,
+  .navigation a {
+    transition: background-color 0.2s ease,
+                box-shadow 0.2s ease;
+  }
+}
+
+.project:hover {
+  box-shadow: 0 5px 18px rgba(37, 48, 71, 0.09);
+}
   </style>
 </head>
 
